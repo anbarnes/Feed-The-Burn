@@ -54,24 +54,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe9df', end
 
 
 <div id="filters">
-<form>
-<fieldset>
-	<legend>BPM</legend>
-	<select name="bpm" size="1">
-		<option>NA</option>
-		<option>140</option>
-		<option>145</option>
-		<option>150</option>
-		<option>155</option>
-		<option>160</option>
-		<option>165</option>
-		<option>170</option>
-		<option>175</option>
-		<option>180</option>
-	</select>
-</fieldset>
-	<form id="feederForm">
-		<fieldset>
+<form id="filterForm">
+	<fieldset id="BPM">
 			<legend>BPM</legend>
 			<select name="bpm" size="1">
 				<option>NA</option>
@@ -120,7 +104,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe9df', end
 			<legend>Sounds like...</legend>
 			<p>Artist Name: <input type="text" name="similar" id="similar"></p>
 		</fieldset>
-		<button type="button">Submit</button>
+		<button id="submit" type="button">Submit</button>
 	</form>
 
 </form>

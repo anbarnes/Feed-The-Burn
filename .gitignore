@@ -3,3 +3,4 @@
 .DS_Store
 #Sublime Project File
 *.sublime-project
+*.sublime-workspace

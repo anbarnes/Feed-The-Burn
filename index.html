@@ -31,31 +31,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe9df', end
 <body>
 	<img src="http://www.engagedleadership.com/wp-content/uploads/2012/10/Estafet-Running.jpeg" alt="Run" width="600"height="250">
 
+
 <div id="results">
-<table>
-	<tr>
-		<th>Artist</th>
-		<th>Title</th>
-		<th>BPM</th>
-		<th>Genre</th>
-		<th>Duration</th>
-	</tr>
-	<tr>
-		<td>Adventure Club</td>
-		<td>Superheroes Anonymous Pt.1</td>
-		<td>256</td>
-		<td>Electronic</td>
-		<td>38.02</td>
-	</tr>
-	<tr>
-		<td>Calvin Harris</td>
-		<td>Bounce</td>
-		<td>220</td>
-		<td>Dance</td>
-		<td>3.45</td>
-	</tr>
+
+
+
+<table id="resultsTable">
+	<thead>
+		<tr>
+			<th>Artist</th>
+			<th>Title</th>
+			<th>BPM</th>
+			<th>Genre</th>
+			<th>Duration</th>
+			<th>Downloadable</th>
+		</tr>
+	</thead>
+	<tbody>
+
 </table>
 </div>
+
 
 <div id="filters">
 <form>
@@ -74,45 +70,66 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe9df', end
 		<option>180</option>
 	</select>
 </fieldset>
+	<form id="feederForm">
+		<fieldset>
+			<legend>BPM</legend>
+			<select name="bpm" size="1">
+				<option>NA</option>
+				<option>140</option>
+				<option>145</option>
+				<option>150</option>
+				<option>155</option>
+				<option>160</option>
+				<option>165</option>
+				<option>170</option>
+				<option>175</option>
+				<option>180</option>
+			</select>
+		</fieldset>
 
-<fieldset>
-	<legend>Genre</legend>
-	<select name="genre" size="1">
-		<option>NA</option>
-		<option>Classical</option>
-		<option>Electronic</option>
-		<option>Jazz & Blues</option>
-		<option>Metal</option>
-		<option>Pop</option>
-		<option>Reggae</option>
-		<option>Rock</option>
-		<option>Urban</option>
-		<option>World</option>
-	</select>
-</fieldset>
+		<fieldset>
+			<legend>Genre</legend>
+			<select name="genre" size="1">
+				<option>NA</option>
+				<option>Classical</option>
+				<option>Electronic</option>
+				<option>Jazz & Blues</option>
+				<option>Metal</option>
+				<option>Pop</option>
+				<option>Reggae</option>
+				<option>Rock</option>
+				<option>Urban</option>
+				<option>World</option>
+			</select>
+		</fieldset>
 
-<fieldset>
-	<legend>Duration (min)</legend>
-	<select name="duration" size="1">
-		<option>NA</option>
-		<option>&lt;5</option>
-		<option>5&ndash;10</option>
-		<option>10&ndash;15</option>
-		<option>15&ndash;20</option>
-		<option>20&ndash;30</option>
-		<option>&gt;30</option>
-	</select>
-</fieldset>
+		<fieldset>
+			<legend>Duration (min)</legend>
+			<select name="duration" size="1">
+				<option>NA</option>
+				<option>&lt;5</option>
+				<option>5&ndash;10</option>
+				<option>10&ndash;15</option>
+				<option>15&ndash;20</option>
+				<option>20&ndash;30</option>
+				<option>&gt;30</option>
+			</select>
+		</fieldset>
 
-<fieldset>
-	<legend>Sounds like...</legend>
-	<p>Artist Name: <input type="text" name="similar" id="similar"></p>
-</fieldset>
+		<fieldset>
+			<legend>Sounds like...</legend>
+			<p>Artist Name: <input type="text" name="similar" id="similar"></p>
+		</fieldset>
+		<button type="button">Submit</button>
+	</form>
 
 </form>
 </div>
 
 </body>
-
+<!-- JS Includes -->
+<script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="js/feed-the-burn.js"></script>
 </html>
 

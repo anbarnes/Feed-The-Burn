@@ -24,7 +24,11 @@ $(document).ready(function() {
     // Find all tracks with a bpm of 120.
     // Log them to the console, then add them to a list
     //
-    SC.get('/tracks', { bpm: { from: 120 } }, function(tracks) {
+    SC.get('/tracks', { 
+        bpm: { 
+            from: 120 
+        } 
+    }, function(tracks) {
         console.log(tracks);
         AddTracksToTracklist(tracks, $('#BPMList'));
     });
@@ -35,7 +39,12 @@ $(document).ready(function() {
     //
     var thirty_minutes_in_milis = 1800000;
     var fourty_minutes_in_milis = 2400000;
-    SC.get('/tracks', { duration: { from: thirty_minutes_in_milis, to: fourty_minutes_in_milis } }, function(tracks) {
+    SC.get('/tracks', { 
+        duration: { 
+            from: thirty_minutes_in_milis, 
+            to: fourty_minutes_in_milis 
+        } 
+    }, function(tracks) {
         console.log(tracks);
         AddTracksToTracklist(tracks, $('#DurationList'));
     });
@@ -43,7 +52,9 @@ $(document).ready(function() {
     // Genre
     // Find all tracks with a genre of "dubstep"
     //
-    SC.get('/tracks', { genre: "dubstep" }, function(tracks) {
+    SC.get('/tracks', { 
+        genre: "dubstep" 
+    }, function(tracks) {
         console.log(tracks);
         AddTracksToTracklist(tracks, $('#GenreList'));
     });

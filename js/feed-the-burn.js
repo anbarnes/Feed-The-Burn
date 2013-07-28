@@ -13,6 +13,30 @@ function AddTracksToTracklist(tracks, list){
     });
 }
 
+function CreateTrackRow(track){
+    var row_string = "";
+    row_string += ( 
+        "<tr><td>" + track.user.username + 
+        "</td><td><a target='_blank' href='" + track.permalink_url + 
+        "''>" + track.title + "</a></td><td>" +
+        track.bpm + "</td><td>" + track.genre +
+        "</td><td>" + track.duration + "</td><td>"
+    )
+    if (track.downloadable === true) {
+        row_string += "Yes";
+    }
+    row_string += "</td></tr>";
+    return row_string;
+}
+
+//Add Tracks to Table:
+function AddTracksToTable(tracks, table){
+    $(tracks).each(function(track) {
+        console.log(this);
+        table.append(CreateTrackRow(this));
+    });
+}
+
 //Setup
 $(document).ready(function() {
     //Initialize the connection to soundcloud
@@ -30,7 +54,7 @@ $(document).ready(function() {
         } 
     }, function(tracks) {
         console.log(tracks);
-        AddTracksToTracklist(tracks, $('#BPMList'));
+        //AddTracksToTable(tracks, $('#resultsTable > tbody'));
     });
 
     // Duration
@@ -43,10 +67,13 @@ $(document).ready(function() {
         duration: { 
             from: thirty_minutes_in_milis, 
             to: fourty_minutes_in_milis 
-        } 
+        },
+        bpm: { 
+            from: 120 
+        }
     }, function(tracks) {
         console.log(tracks);
-        AddTracksToTracklist(tracks, $('#DurationList'));
+        AddTracksToTable(tracks, $('#resultsTable > tbody'));
     });
 
     // Genre

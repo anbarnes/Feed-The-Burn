@@ -1,2 +1,5 @@
 #Files to ignore
+#OSX hidden file
 .DS_Store
+#Sublime Project File
+*.sublime-project

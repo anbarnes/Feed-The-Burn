@@ -1,0 +1,686 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Run",
+				"RunViewSet  (class)"
+			],
+			[
+				"Gr",
+				"GroupViewSet  (class)"
+			],
+			[
+				"view",
+				"viewsets"
+			],
+			[
+				"decom",
+				"decomission_runID"
+			],
+			[
+				"Te",
+				"TestImplementationMetrics"
+			],
+			[
+				"rel",
+				"release_owners"
+			],
+			[
+				"metric",
+				"metric_record"
+			],
+			[
+				"Test",
+				"TestImplementation"
+			],
+			[
+				"ti",
+				"ti_records"
+			],
+			[
+				"owner",
+				"owner"
+			],
+			[
+				"run",
+				"run_to_evaludate"
+			],
+			[
+				"text",
+				"text"
+			],
+			[
+				"tw",
+				"tweet_text"
+			],
+			[
+				"sen",
+				"sentiment_list"
+			],
+			[
+				"tex",
+				"text_array"
+			],
+			[
+				"sente",
+				"sentiment_file"
+			],
+			[
+				"to",
+				"to_defect_data"
+			],
+			[
+				"Seve",
+				"severity"
+			],
+			[
+				"def",
+				"defect_data"
+			],
+			[
+				"file",
+				"file_path"
+			],
+			[
+				"hard",
+				"hardware_defect"
+			],
+			[
+				"rall",
+				"rally_connection"
+			],
+			[
+				"create",
+				"create_ticket"
+			],
+			[
+				"pr",
+				"projects"
+			],
+			[
+				"get",
+				"getProjects"
+			],
+			[
+				"is",
+				"is_hardware_bad"
+			],
+			[
+				"lab",
+				"LAB_DIRECTORIES"
+			],
+			[
+				"fail",
+				"failed_check"
+			],
+			[
+				"faile",
+				"failed_checks"
+			],
+			[
+				"bl",
+				"blkr_csc_empty_aa"
+			],
+			[
+				"clean",
+				"cleaned_aas"
+			],
+			[
+				"em",
+				"empty_aas"
+			],
+			[
+				"_chec",
+				"_check_crc_status"
+			],
+			[
+				"gw",
+				"gws_obj"
+			],
+			[
+				"_ch",
+				"_check_for_ops"
+			],
+			[
+				"throu",
+				"Throughput"
+			],
+			[
+				"gws",
+				"gws_obj"
+			],
+			[
+				"D",
+				"DEFAULT_PARAMS"
+			],
+			[
+				"DE",
+				"DEFAULT_GROVER_URL"
+			],
+			[
+				"max_",
+				"max_prime"
+			],
+			[
+				"pro",
+				"process_factors"
+			],
+			[
+				"fib",
+				"fibonacci_numbers"
+			],
+			[
+				"max",
+				"max_value"
+			],
+			[
+				"fi",
+				"fibonacci_numbers"
+			],
+			[
+				"gene",
+				"generate_fibonacci_numbers"
+			],
+			[
+				"mul",
+				"mult"
+			],
+			[
+				"sum",
+				"sum_of_multiples"
+			],
+			[
+				"mu",
+				"mult"
+			],
+			[
+				"mupl",
+				"sum_of_multiples"
+			],
+			[
+				"cla",
+				"className"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/feed-the-burn.js",
+			"settings":
+			{
+				"buffer_size": 1622,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/chris/projects/kilncode_blog/index.html",
+		"/Users/chris/projects/kilncode_blog/pelicanconf.py",
+		"/Users/chris/projects/Feed-The-Burn/.git/MERGE_MSG",
+		"/Users/chris/projects/Feed-The-Burn/.gitignore",
+		"/Users/chris/projects/dexter/apps/tma/models.py",
+		"/Users/chris/projects/dexter/apps/tma/admin.py",
+		"/Users/chris/.zshrc",
+		"/Users/chris/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/chris/Library/Application Support/Sublime Text 2/Packages/User/Pylinter.sublime-settings",
+		"/Users/chris/projects/dexter/apps/lft/RootCauseEngine.py",
+		"/Users/chris/projects/dexter/apps/lab/models.py",
+		"/Users/chris/projects/dexter/apps/cptreport/models.py",
+		"/Users/chris/projects/dexter/apps/lft/models.py",
+		"/Users/chris/projects/dexter/.gitignore",
+		"/Users/chris/projects/dexter/apps/lft/admin.py",
+		"/Users/chris/projects/dexter/apps/tma/tests.py",
+		"/Users/chris/projects/dexter/apps/tma/loader.py",
+		"/Users/chris/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/chris/projects/dexter/graph_generator.py",
+		"/Users/chris/projects/dexter/templates/tma/release.html",
+		"/Users/chris/projects/dexter/apps/tma/urls.py",
+		"/Users/chris/projects/dexter/apps/tma/record_metrics.py",
+		"/Users/chris/projects/dexter/apps/tma/views.py",
+		"/Users/chris/projects/dexter/static/js/tma/release_metrics_graph.js",
+		"/u/chrisk1/p4/automation/lib/filer_ng.exp",
+		"/u/chrisk1/p4/automation/Reg/sanity/sanity.slsl",
+		"/opt/webapps/django/pdfsupply/.git/MERGE_MSG",
+		"/Users/chris/Dropbox/amber/server_notes",
+		"/Users/chris/.ssh/known_hosts",
+		"/Users/chris/Downloads/Chapter1/irock/irock1.html",
+		"/Users/chris/Downloads/Chapter1/irock/rock.png",
+		"/private/var/folders/30/1ffr19xj6194lgchc1s1ltvr001f8g/T/fd7bbfad-f3e1-4307-97a5-bc82d98409ca/pdfsupply_static/bluetheme/css/menu.css",
+		"/Users/chris/demo/index.html",
+		"/Users/chris/projects/dexter/.git/MERGE_MSG",
+		"/Users/chris/projects/gina/conf/gina",
+		"/Users/chris/projects/gina/conf/gina_gunicorn.conf",
+		"/Users/chris/projects/gina/conf/gina_gunicorn.sh",
+		"/Users/chris/projects/gina/gina/settings.py",
+		"/Users/chris/projects/gina/conf/gunicorn.py",
+		"/u/kturner/current/analysis_tools/gen_purpose.py",
+		"/Users/chris/Desktop/import-Jun19.pl",
+		"/u/chrisk1/p4/automation/perl/RunSubmissions/t/SummaryReportingUnitTest.t",
+		"/u/chrisk1/p4/automation/perl/RunSubmissions/t/rules.t",
+		"/u/chrisk1/p4/automation/perl/t/test_log4perfant.pl",
+		"/u/chrisk1/p4/automation/analysis_tools/resubmit.py",
+		"/Users/chris/Desktop/asymchem notes",
+		"/u/chrisk1/p4/automation/lib/packet_trace.exp",
+		"/Users/chris/Downloads/fail",
+		"/Users/chris/vagrants/dexter_guide/Vagrantfile",
+		"/Users/chris/vagrants/dexter_guide/Vagrantfile.bak",
+		"/tmp/crontab.eK8IyMpAdN",
+		"/Users/chris/projects/dexter/requirements.txt",
+		"/Users/chris/projects/requirements.txt",
+		"/Users/chris/projects/dexter/.git/config",
+		"/Users/chris/.virtualenvs/dexter/bin/postactivate",
+		"/Users/chris/projects/rally_lab/hardware_manager.py",
+		"/Users/chris/projects/data_science/datasci_course_materials/assignment2/multiply.txt",
+		"/Users/chris/projects/data_science/datasci_course_materials/assignment2/big_documents.txt",
+		"/Users/chris/projects/data_science/datasci_course_materials/assignment2/union.txt",
+		"/Users/chris/projects/data_science/datasci_course_materials/assignment2/count.txt",
+		"/Users/chris/projects/data_science/datasci_course_materials/assignment1/twitterstream.py",
+		"/Users/chris/projects/data_science/datasci_course_materials/assignment1/AFINN-README.txt",
+		"/Users/chris/projects/data_science/hw1/problem0.py",
+		"/Users/chris/.virtualenvs/data_science/bin/postactivate",
+		"/Users/chris/Documents/NetApp/blog_pt2",
+		"/Users/chris/Documents/NetApp/lab_meeting_notes",
+		"/u/chrisk1/projects/sanity_checks/Wiki Entry for Sanity Checks:",
+		"/u/chrisk1/check_upgrade.py",
+		"/Users/chris/projects/rally_lab/hardware_manager.",
+		"/Users/chris/projects/rally_lab/hardware_manager.sh",
+		"/Users/chris/projects/rally_lab/README.md",
+		"/u/chrisk1/p4/automation/lib/client.exp",
+		"/Users/chris/projects/labdb/lab_db.sh",
+		"/x/eng/reglab/Reg.q",
+		"/x/eng/reglab/Grab/regds14mk2x002",
+		"/x/eng/reglab/Grab/regibm3650m3x21",
+		"/x/eng/perfdev/Grab/pdfas6210x03",
+		"/x/eng/reglab/Grab/regfas3070x02",
+		"/Users/chris/projects/rally_lab/requirements.txt",
+		"/Users/chris/projects/rally_lab/rally_connection.cfg",
+		"/Users/chris/projects/rally_lab/public/rally.py",
+		"/Users/chris/Documents/NetApp/burt_meeting_notes/03-21-2013.txt",
+		"/Users/chris/Desktop/sources.list",
+		"/Users/chris/projects/rally_lab/__init__.py",
+		"/Users/chris/Downloads/pyral-0.9.3/pyral/restapi.py",
+		"/u/jzachary/scripts/utils.py",
+		"/u/jzachary/scripts/perfdata_test.py",
+		"/Users/chris/.virtualenvs/rally_lab/bin/postactivate",
+		"/u/jzachary/scripts/perfdata_test",
+		"/u/boballeg/p4/auto/current/analysis_tools/tune.py",
+		"/Users/chris/25000",
+		"/u/chrisk1/projects/sanity_checks/lib/xml2obj.py",
+		"/u/chrisk1/projects/sanity_checks/sanity_specs.slsl",
+		"/Users/chris/Desktop/TODO 3-8-2013",
+		"/u/chrisk1/projects/sanity_checks/RegressionSanityChecks.py",
+		"/Users/chris/Documents/NetApp/# CIFS Clients Notes",
+		"/u/gdowding/git/perfant_clone/win-packet/lib/packet_trace.exp",
+		"/x/eng/pabstgdl/PabstGDL/sanity/pabst.py",
+		"/u/chrisk1/projects/sanity_checks/.gitignore",
+		"/u/chrisk1/p4/aamp/current/setup.py",
+		"/x/eng/pabstgdl/PabstGDL/sanity/pabst.slsl",
+		"/u/chrisk1/projects/sanity_checks/MySanityCheck.py",
+		"/u/chrisk1/projects/sanity_checks/activate",
+		"/u/chrisk1/p4/aamp/current/install",
+		"/Users/chris/.virtualenvs/sanity_checks/bin/postactivate",
+		"/u/chrisk1/p4/aamp/current/sanity/disk.py",
+		"/Users/chris/projects/dexter/scratch/event_web_service_research.py",
+		"/var/folders/30/1ffr19xj6194lgchc1s1ltvr001f8g/T/psql.edit.23642.sql",
+		"/Users/chris/Documents/NetApp/burt_meeting_notes/burt_notes_for_tony",
+		"/Users/chris/Documents/NetApp/notes/intel_notes",
+		"/Users/chris/projects/kilncode_blog/content/Working_With_Vagrant",
+		"/Users/chris/Downloads/novus-nvd3-ea450b6/examples/lineWithFocusChart.html",
+		"/Users/chris/Downloads/wav_processor.m",
+		"/Users/chris/Downloads/novus-nvd3-ea450b6/examples/linePlusBarChart.html",
+		"/Users/chris/Documents/NetApp/regression_triage_notes/ontap_prompt_research.md",
+		"/Users/chris/Desktop/SIO.c",
+		"/Users/chris/projects/projecteuler/problem3.py",
+		"/Users/chris/projects/chardway/ex6.c",
+		"/Users/chris/projects/chardway/Makefile",
+		"/Users/chris/projects/chardway/ex3.c",
+		"/Users/chris/projects/chardway/ex4.c",
+		"/Users/chris/projects/projecteuler/problem",
+		"/Users/chris/projects/kilncode_blog/fabfile.py",
+		"/Users/chris/Documents/NetApp/regression_triage_notes/cifs_nfs_research.md",
+		"/Users/chris/projects/kilncode_blog/.gitignore",
+		"/Users/chris/.s3cfg",
+		"/Users/chris/Documents/NetApp/release_performance/commands.py",
+		"/Users/chris/projects/kilncode_blog/404.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"-protocol-services-use-data-lifs",
+			"\nKarlsson, Robert		 Sweden\nKaye, Jonathan		 United States\nKaymer, Martin		 Germany\nKelly, Jerry		 United States\nKelly, Troy		 United States\nKim, Anthony		 United States\nKim, K.T.		 Korea, Republic of\nKim, Si Woo		 Korea, Republic of\nKim, Si Woo		 Korea, Republic of\nKirk, Chris		 United States\nKite, Tom		\nKite, Tom		 United States\nKlauk, Jeff		 United States\nKnost, Colt		 United States\nKnox",
+			"   ",
+			"build",
+			"Kresge",
+			"width: 20px;",
+			"build",
+			"the",
+			"sent_file",
+			"getpass",
+			"StringIO",
+			"datetime",
+			"datetime\ndatetime\ndatetime",
+			"datetime\ndatetime",
+			"set_client_ips",
+			"i386",
+			"precise",
+			"../assets/",
+			"open_fds: File open error",
+			"NFS",
+			"600",
+			"stats_start",
+			"600",
+			"stats_start",
+			"stats start\nstats",
+			"run_through",
+			"touch",
+			"clients"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			", ",
+			"amd64",
+			"quantal",
+			"../bootstrap/",
+			"../assets/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/feed-the-burn.js",
+					"settings":
+					{
+						"buffer_size": 1622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 59.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"lft/ad",
+				"apps/lft/admin.py"
+			],
+			[
+				"lft/models",
+				"apps/lft/models.py"
+			],
+			[
+				"lft/views",
+				"apps/lft/views.py"
+			],
+			[
+				"dexter/url",
+				"dexter/urls.py"
+			],
+			[
+				"dexter/settings",
+				"dexter/settings/local_dev.py"
+			],
+			[
+				"lft/admin",
+				"apps/lft/admin.py"
+			],
+			[
+				"lft/model",
+				"apps/lft/models.py"
+			],
+			[
+				"",
+				"graph_generator.py"
+			],
+			[
+				"tma/models",
+				"apps/tma/models.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}

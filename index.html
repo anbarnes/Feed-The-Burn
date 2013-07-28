@@ -3,7 +3,25 @@
 <html>
 <head>
 <title>Feed The Burn</title>
+<style type="text/css">
+body {
+	font-family: Helvetica, Arial;
+	background: rgb(207,233,223); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(207,233,223,1) 0%, rgba(170,222,199,1) 17%, rgba(58,194,133,1) 46%, rgba(97,199,151,1) 50%, rgba(66,214,138,1) 63%, rgba(76,240,144,1) 71%, rgba(66,214,138,1) 77%, rgba(58,194,124,1) 84%, rgba(38,140,101,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(207,233,223,1)), color-stop(17%,rgba(170,222,199,1)), color-stop(46%,rgba(58,194,133,1)), color-stop(50%,rgba(97,199,151,1)), color-stop(63%,rgba(66,214,138,1)), color-stop(71%,rgba(76,240,144,1)), color-stop(77%,rgba(66,214,138,1)), color-stop(84%,rgba(58,194,124,1)), color-stop(100%,rgba(38,140,101,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(207,233,223,1) 0%,rgba(170,222,199,1) 17%,rgba(58,194,133,1) 46%,rgba(97,199,151,1) 50%,rgba(66,214,138,1) 63%,rgba(76,240,144,1) 71%,rgba(66,214,138,1) 77%,rgba(58,194,124,1) 84%,rgba(38,140,101,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(207,233,223,1) 0%,rgba(170,222,199,1) 17%,rgba(58,194,133,1) 46%,rgba(97,199,151,1) 50%,rgba(66,214,138,1) 63%,rgba(76,240,144,1) 71%,rgba(66,214,138,1) 77%,rgba(58,194,124,1) 84%,rgba(38,140,101,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(207,233,223,1) 0%,rgba(170,222,199,1) 17%,rgba(58,194,133,1) 46%,rgba(97,199,151,1) 50%,rgba(66,214,138,1) 63%,rgba(76,240,144,1) 71%,rgba(66,214,138,1) 77%,rgba(58,194,124,1) 84%,rgba(38,140,101,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, rgba(207,233,223,1) 0%,rgba(170,222,199,1) 17%,rgba(58,194,133,1) 46%,rgba(97,199,151,1) 50%,rgba(66,214,138,1) 63%,rgba(76,240,144,1) 71%,rgba(66,214,138,1) 77%,rgba(58,194,124,1) 84%,rgba(38,140,101,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe9df', endColorstr='#268c65',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#header {
+	background-image: url(http://www.engagedleadership.com/wp-content/uploads/2012/10/Estafet-Running.jpeg);
+}
+</style>
 </head>
+
 
 <header>
 	<h1>Feed The Burn</h1>
@@ -13,7 +31,7 @@
 <body>
 	<img src="http://www.engagedleadership.com/wp-content/uploads/2012/10/Estafet-Running.jpeg" alt="Run" width="600"height="250">
 
-
+<div id="results">
 <table>
 	<tr>
 		<th>Artist</th>
@@ -37,7 +55,9 @@
 		<td>3.45</td>
 	</tr>
 </table>
+</div>
 
+<div id="filters">
 <form>
 <fieldset>
 	<legend>BPM</legend>
@@ -90,6 +110,8 @@
 </fieldset>
 
 </form>
+</div>
+
 </body>
 
 </html>

@@ -8,9 +8,9 @@
 //Add Tracks to Tracklist:
 function AddTracksToTracklist(tracks, list){
     $(tracks).each(function(track) {
-            console.log(this);
-            list.append("<li> <a href='" + this.permalink_url + "''>"+ this.user.username + " - " + this.title + "</a></li>");
-        });
+        console.log(this);
+        list.append("<li> <a href='" + this.permalink_url + "''>"+ this.user.username + " - " + this.title + "</a></li>");
+    });
 }
 
 //Setup
@@ -35,7 +35,7 @@ $(document).ready(function() {
     */
     var thirty_minutes_in_milis = 1800000;
     var fourty_minutes_in_milis = 2400000;
-    SC.get('/tracks', { length: { from: thirty_minutes_in_milis, to:fourty_minutes_in_milis } }, function(tracks) {
+    SC.get('/tracks', { duration: { from: thirty_minutes_in_milis, to: fourty_minutes_in_milis } }, function(tracks) {
         console.log(tracks);
         AddTracksToTracklist(tracks, $('#DurationList'));
     });

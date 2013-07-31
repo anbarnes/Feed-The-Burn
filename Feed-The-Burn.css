@@ -1,27 +1,22 @@
 body {
-	font-family: Verdana; 
-	color: rgba(14,35,57,1.0);
-	background: rgb(208,210,84); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%, rgba(162,186,42,1) 28%, rgba(136,170,0,1) 53%, rgba(179,203,45,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(208,210,84,1)), color-stop(28%,rgba(162,186,42,1)), color-stop(53%,rgba(136,170,0,1)), color-stop(100%,rgba(179,203,45,1))); /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* IE10+ */
-background: radial-gradient(ellipse at center, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d254', endColorstr='#b3cb2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-family: Verdana;
+    font-weight: bold;
+    color: rgba(14,35,57,1.0);
+    background: rgb(208,210,84);
+	background-image: url(http://norcaleasygreen.com/wp-content/uploads/2012/11/turf-grass1.jpg);
 }
 
 table {
 	font-family: Verdana;
-	font-size: 18px;
 	font-style: normal;
-	font-weight: normal;
-	line-height: 1.4em;
+	font-weight: bold;
 	border-collapse:separate;
 	text-align: left;
 }
 
 thead th {
+    font-size: 18px;
+    line-height: 1.4em;
 	padding:15px;
     color:rgba(14,35,57,1.0);
     text-shadow:1px 1px 1px #666;
@@ -47,16 +42,20 @@ thead th {
     -moz-border-radius:5px 5px 0px 0px;
     border-top-left-radius:5px;
     border-top-right-radius:5px;
+    
 }
 
 tbody td {
+    font-size: 12px;
+    line-height: 1em;
 	padding: 10px;
 	text-align: left;
-	background-color: rgba(176,125,71,0.6);
+	background-color: rgba(176,125,71,0.7);
 	border: 2px solid #666;
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
 	color: rgba(15,35,57,1.0);
+    
 }
 
 #header {
@@ -73,12 +72,63 @@ tbody td {
 
 #results {
 	float: right;
-	width: 70%;
+	width: 65%;
 	margin: 5% 5% 0 0;
 }
 
 #filters {
 	float: left;
-	width: 15%;
+	width: 20%;
 	margin: 5% 5% 0 0;
 }
+
+#tips {
+    float: left;
+    width: 20%;
+    margin: 5% 5% 5% 0;
+    font-size: 12px;
+    font-weight: bold;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(34,128,150)),
+        color-stop(0.51, rgb(98,148,203)),
+        color-stop(0.87, rgb(24,69,206))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(34,128,150) 2%,
+        rgb(98,148,203) 51%,
+        rgb(24,69,206) 87%
+        );
+    border: 4px solid #666;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+#helpfulLinks {
+    float: left;
+    width: 20%;
+    margin: 5% 5% 5% 0;
+    font-size: 12px;
+    font-weight: bold;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(34,128,150)),
+        color-stop(0.51, rgb(98,148,203)),
+        color-stop(0.87, rgb(24,69,206))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(34,128,150) 2%,
+        rgb(98,148,203) 51%,
+        rgb(24,69,206) 87%
+        );
+    border: 4px solid #666;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+

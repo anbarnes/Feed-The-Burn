@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Feed The Burn</title>
+<style>
+body {
+	font-family: Verdana; 
+	color: rgba(14,35,57,1.0);
+	background: rgb(208,210,84); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%, rgba(162,186,42,1) 28%, rgba(136,170,0,1) 53%, rgba(179,203,45,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(208,210,84,1)), color-stop(28%,rgba(162,186,42,1)), color-stop(53%,rgba(136,170,0,1)), color-stop(100%,rgba(179,203,45,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d254', endColorstr='#b3cb2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+table {
+	font-family: Verdana;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4em;
+	border-collapse:separate;
+	text-align: left;
+}
+
+thead th {
+	padding:15px;
+    color:rgba(14,35,57,1.0);
+    text-shadow:1px 1px 1px #666;
+    border:1px solid #666;
+    border-bottom:3px solid #666;
+    background-color:#444;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(34,128,150)),
+        color-stop(0.51, rgb(98,148,203)),
+        color-stop(0.87, rgb(24,69,206))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(34,128,150) 2%,
+        rgb(98,148,203) 51%,
+        rgb(24,69,206) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+tbody td {
+	padding: 10px;
+	text-align: left;
+	background-color: rgba(176,125,71,0.6);
+	border: 2px solid #666;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	color: rgba(15,35,57,1.0);
+}
+
+#header {
+	margin: 0em 6em;
+  	padding: 1em 3em 2em 3em;
+  	text-align: center;
+  	background: 
+  		url(http://png-3.findicons.com/files/icons/2455/web_icons/48/music_note_blue.png) right top repeat-y,
+  		url(http://png-3.findicons.com/files/icons/2455/web_icons/48/music_note_blue.png) left top repeat-y;
+  	background-color: rgba(176,125,71,0.6);
+	font: bold;
+	color: rgba(14,35,57,1.0);
+}
+
+#results {
+	float: right;
+	width: 70%;
+	margin: 5% 5% 0 0;
+}
+
+#filters {
+	float: left;
+	width: 15%;
+	margin: 5% 5% 0 0;
+}
+
+</style>
+</head>
+
+
+<div id="header">
+	<h1>Feed The Burn</h1>
+	<p>Need a new workout playlist? Use this page to search through SoundCloud's database and find songs to suit your workout needs.</p>
+</div>
+
+
+<body>	
+<div id="results">
+<table id="resultsTable">
+	<thead>
+		<tr>
+			<th>Artist</th>
+			<th>Title</th>
+			<th>BPM</th>
+			<th>Genre</th>
+			<th>Duration</th>
+			<th>Downloadable</th>
+		</tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+</div>
+
+
+<div id="filters">
+<form id="filterForm">
+	<fieldset id="BPM">
+			<legend>BPM</legend>
+			<select name="bpm" size="1">
+				<option>NA</option>
+				<option>&lt;120</option>
+				<option>120&ndash;130</option>
+				<option>130&ndash;140</option>
+				<option>140&ndash;150</option>
+				<option>150&ndash;160</option>
+				<option>160&ndash;170</option>
+				<option>&gt;180</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Genre</legend>
+			<select name="genre" size="1">
+				<option>NA</option>
+				<option>Classical</option>
+				<option>Electronic</option>
+				<option>Jazz & Blues</option>
+				<option>Metal</option>
+				<option>Pop</option>
+				<option>Reggae</option>
+				<option>Rock</option>
+				<option>Urban</option>
+				<option>World</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Duration (min)</legend>
+			<select name="duration" size="1">
+				<option>NA</option>
+				<option>&lt;5</option>
+				<option>5&ndash;10</option>
+				<option>10&ndash;15</option>
+				<option>15&ndash;20</option>
+				<option>20&ndash;30</option>
+				<option>&gt;30</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Sounds like...</legend>
+			<p>Artist Name: <input type="text" name="similar" id="similar"></p>
+		</fieldset>
+		<button id="submit" type="button">Submit</button>
+	</form>
+</div>
+
+</body>
+<!-- JS Includes -->
+<script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="js/feed-the-burn.js"></script>
+</html>
+

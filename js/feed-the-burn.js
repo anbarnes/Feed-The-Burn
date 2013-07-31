@@ -40,7 +40,14 @@ function AddTracksToTable(tracks, table){
 //Get state info of form
 function GetStateOfForm(form){
     var form_state = {};
-    console.log($('#BPM').children('select.list option:selected'));
+    var bpm = $('#BPM :selected').val();
+    if (parseInt(bpm) === 140){
+        console.log("BPM is 140");
+        form_state['bpm'] = {
+            from: 140,
+            to: 144
+        }
+    }
     return form_state;
 }
 
@@ -53,8 +60,11 @@ $(document).ready(function() {
 
     //Listen to submit button
     $('#submit').click(function() {
-        console.log(GetStateOfForm($('filterForm')));
-        alert("Handler for .click() called.");
+        var query = GetStateOfForm($('filterForm'));
+        SC.get('/tracks', query , function(tracks) {
+            console.log(tracks);
+            AddTracksToTable(tracks, $('#resultsTable > tbody'));
+        });
     });
     // BPM
     // Find all tracks with a bpm of 120.
@@ -85,7 +95,7 @@ $(document).ready(function() {
         }
     }, function(tracks) {
         //console.log(tracks);
-        AddTracksToTable(tracks, $('#resultsTable > tbody'));
+        //AddTracksToTable(tracks, $('#resultsTable > tbody'));
     });
 
     // Genre
@@ -95,6 +105,6 @@ $(document).ready(function() {
         genre: "dubstep" 
     }, function(tracks) {
         //console.log(tracks);
-        AddTracksToTracklist(tracks, $('#GenreList'));
+        //AddTracksToTracklist(tracks, $('#GenreList'));
     });
 });

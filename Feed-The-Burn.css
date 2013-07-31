@@ -1,18 +1,84 @@
 body {
-	font-family: Helvetica, Arial;
-	background: rgb(207,233,223); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(207,233,223,1) 0%, rgba(170,222,199,1) 17%, rgba(58,194,133,1) 46%, rgba(97,199,151,1) 50%, rgba(66,214,138,1) 63%, rgba(76,240,144,1) 71%, rgba(66,214,138,1) 77%, rgba(58,194,124,1) 84%, rgba(38,140,101,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(207,233,223,1)), color-stop(17%,rgba(170,222,199,1)), color-stop(46%,rgba(58,194,133,1)), color-stop(50%,rgba(97,199,151,1)), color-stop(63%,rgba(66,214,138,1)), color-stop(71%,rgba(76,240,144,1)), color-stop(77%,rgba(66,214,138,1)), color-stop(84%,rgba(58,194,124,1)), color-stop(100%,rgba(38,140,101,1))); /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(207,233,223,1) 0%,rgba(170,222,199,1) 17%,rgba(58,194,133,1) 46%,rgba(97,199,151,1) 50%,rgba(66,214,138,1) 63%,rgba(76,240,144,1) 71%,rgba(66,214,138,1) 77%,rgba(58,194,124,1) 84%,rgba(38,140,101,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover, rgba(207,233,223,1) 0%,rgba(170,222,199,1) 17%,rgba(58,194,133,1) 46%,rgba(97,199,151,1) 50%,rgba(66,214,138,1) 63%,rgba(76,240,144,1) 71%,rgba(66,214,138,1) 77%,rgba(58,194,124,1) 84%,rgba(38,140,101,1) 100%); /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover, rgba(207,233,223,1) 0%,rgba(170,222,199,1) 17%,rgba(58,194,133,1) 46%,rgba(97,199,151,1) 50%,rgba(66,214,138,1) 63%,rgba(76,240,144,1) 71%,rgba(66,214,138,1) 77%,rgba(58,194,124,1) 84%,rgba(38,140,101,1) 100%); /* IE10+ */
-background: radial-gradient(ellipse at center, rgba(207,233,223,1) 0%,rgba(170,222,199,1) 17%,rgba(58,194,133,1) 46%,rgba(97,199,151,1) 50%,rgba(66,214,138,1) 63%,rgba(76,240,144,1) 71%,rgba(66,214,138,1) 77%,rgba(58,194,124,1) 84%,rgba(38,140,101,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe9df', endColorstr='#268c65',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	font-family: Verdana; 
+	color: rgba(14,35,57,1.0);
+	background: rgb(208,210,84); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%, rgba(162,186,42,1) 28%, rgba(136,170,0,1) 53%, rgba(179,203,45,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(208,210,84,1)), color-stop(28%,rgba(162,186,42,1)), color-stop(53%,rgba(136,170,0,1)), color-stop(100%,rgba(179,203,45,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, rgba(208,210,84,1) 0%,rgba(162,186,42,1) 28%,rgba(136,170,0,1) 53%,rgba(179,203,45,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d254', endColorstr='#b3cb2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+table {
+	font-family: Verdana;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4em;
+	border-collapse:separate;
+	text-align: left;
+}
+
+thead th {
+	padding:15px;
+    color:rgba(14,35,57,1.0);
+    text-shadow:1px 1px 1px #666;
+    border:1px solid #666;
+    border-bottom:3px solid #666;
+    background-color:#444;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(34,128,150)),
+        color-stop(0.51, rgb(98,148,203)),
+        color-stop(0.87, rgb(24,69,206))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(34,128,150) 2%,
+        rgb(98,148,203) 51%,
+        rgb(24,69,206) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+tbody td {
+	padding: 10px;
+	text-align: left;
+	background-color: rgba(176,125,71,0.6);
+	border: 2px solid #666;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	color: rgba(15,35,57,1.0);
 }
 
 #header {
-	margin-top: 0;
-	padding: 3em, 1em, 1em, 1em;
-	text-align: right;
-	background: url(http://www.engagedleadership.com/wp-content/uploads/2012/10/Estafet-Running.jpeg) right bottom no-repeat;
+	margin: 0em 6em;
+  	padding: 1em 3em 2em 3em;
+  	text-align: center;
+  	background: 
+  		url(http://png-3.findicons.com/files/icons/2455/web_icons/48/music_note_blue.png) right top repeat-y,
+  		url(http://png-3.findicons.com/files/icons/2455/web_icons/48/music_note_blue.png) left top repeat-y;
+  	background-color: rgba(176,125,71,0.6);
+	font: bold;
+	color: rgba(14,35,57,1.0);
+}
+
+#results {
+	float: right;
+	width: 70%;
+	margin: 5% 5% 0 0;
+}
+
+#filters {
+	float: left;
+	width: 15%;
+	margin: 5% 5% 0 0;
 }

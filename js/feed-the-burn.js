@@ -40,7 +40,46 @@ function AddTracksToTable(tracks, table){
 //Get state info of form
 function GetStateOfForm(form){
     var form_state = {};
-    console.log($('#BPM').children('select.list option:selected'));
+    var bpm = $('#BPM :selected').html();
+    console.log(bpm);
+    
+    //120 or lower
+    if (bpm === "&lt;120"){
+        form_state['bpm'] = {
+            from: 0,
+            to: 120
+        }
+    } else if (bpm === "120&ndash;130"){
+        form_state['bpm'] = {
+            from: 120,
+            to: 130
+        }
+    } else if (bpm === "130&ndash;140"){
+        form_state['bpm'] = {
+            from: 130,
+            to: 140
+        }
+    } else if (bpm === "140&ndash;150"){
+        form_state['bpm'] = {
+            from: 140,
+            to: 150
+        }
+    } else if (bpm === "150&ndash;160"){
+        form_state['bpm'] = {
+            from: 150,
+            to: 160
+        }
+    } else if (bpm === "160&ndash;170"){
+        form_state['bpm'] = {
+            from: 160,
+            to: 170
+        }
+    } else if (bpm === "&gt;180"){
+        form_state['bpm'] = {
+            from: 180,
+        }
+    }
+    console.log(form_state);
     return form_state;
 }
 
@@ -53,8 +92,12 @@ $(document).ready(function() {
 
     //Listen to submit button
     $('#submit').click(function() {
-        console.log(GetStateOfForm($('filterForm')));
-        alert("Handler for .click() called.");
+        var query = GetStateOfForm($('filterForm'));
+        SC.get('/tracks', query , function(tracks) {
+            console.log(tracks);
+            $("#resultsTable > tbody").children().remove();
+            AddTracksToTable(tracks, $('#resultsTable > tbody'));
+        });
     });
     // BPM
     // Find all tracks with a bpm of 120.
@@ -85,7 +128,7 @@ $(document).ready(function() {
         }
     }, function(tracks) {
         //console.log(tracks);
-        AddTracksToTable(tracks, $('#resultsTable > tbody'));
+        //AddTracksToTable(tracks, $('#resultsTable > tbody'));
     });
 
     // Genre
@@ -95,6 +138,6 @@ $(document).ready(function() {
         genre: "dubstep" 
     }, function(tracks) {
         //console.log(tracks);
-        AddTracksToTracklist(tracks, $('#GenreList'));
+        //AddTracksToTracklist(tracks, $('#GenreList'));
     });
 });

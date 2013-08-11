@@ -40,20 +40,20 @@ function AddTracksToTable(tracks, table){
 //Get state info of form
 function GetStateOfForm(form){
     var form_state = {};
-    var bpm = $('#BPM :selected').html();
+    var bpm = $('#BPM :selected').text();
     console.log(bpm);
     
     //120 or lower
-    if (bpm === "&lt;120"){
+    if (bpm === "<120"){
         form_state['bpm'] = {
             from: 0,
             to: 120
-        }
-    } else if (bpm === "120&ndash;130"){
+        };
+    } else if (bpm === "120–130 "){
         form_state['bpm'] = {
             from: 120,
             to: 130
-        }
+        };
     } else if (bpm === "130&ndash;140"){
         form_state['bpm'] = {
             from: 130,
@@ -77,6 +77,11 @@ function GetStateOfForm(form){
     } else if (bpm === "&gt;180"){
         form_state['bpm'] = {
             from: 180,
+        }
+    } else {
+        form_state['bpm'] = {
+            from: 80,
+            to: 90
         }
     }
     console.log(form_state);

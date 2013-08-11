@@ -49,32 +49,32 @@ function GetStateOfForm(form){
             from: 0,
             to: 120
         };
-    } else if (bpm === "120–130 "){
+    } else if (bpm === "120 - 130"){
         form_state['bpm'] = {
             from: 120,
             to: 130
         };
-    } else if (bpm === "130&ndash;140"){
+    } else if (bpm === "130 - 140"){
         form_state['bpm'] = {
             from: 130,
             to: 140
         }
-    } else if (bpm === "140&ndash;150"){
+    } else if (bpm === "140 - 150"){
         form_state['bpm'] = {
             from: 140,
             to: 150
         }
-    } else if (bpm === "150&ndash;160"){
+    } else if (bpm === "150 - 160"){
         form_state['bpm'] = {
             from: 150,
             to: 160
         }
-    } else if (bpm === "160&ndash;170"){
+    } else if (bpm === "160 - 170"){
         form_state['bpm'] = {
             from: 160,
             to: 170
         }
-    } else if (bpm === "&gt;180"){
+    } else if (bpm === ">180"){
         form_state['bpm'] = {
             from: 180,
         }

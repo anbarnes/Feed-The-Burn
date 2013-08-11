@@ -37,49 +37,59 @@ function AddTracksToTable(tracks, table){
     });
 }
 
-//Get state info of form
-function GetStateOfForm(form){
-    var form_state = {};
-    var bpm = $('#BPM :selected').html();
-    console.log(bpm);
-    
-    //120 or lower
-    if (bpm === "&lt;120"){
+function set_BPM_from_form(bpm, form_state){
+    if (bpm === "<120"){
         form_state['bpm'] = {
             from: 0,
             to: 120
-        }
-    } else if (bpm === "120&ndash;130"){
+        };
+    } else if (bpm === "120 - 130"){
         form_state['bpm'] = {
             from: 120,
             to: 130
-        }
-    } else if (bpm === "130&ndash;140"){
+        };
+    } else if (bpm === "130 - 140"){
         form_state['bpm'] = {
             from: 130,
             to: 140
         }
-    } else if (bpm === "140&ndash;150"){
+    } else if (bpm === "140 - 150"){
         form_state['bpm'] = {
             from: 140,
             to: 150
         }
-    } else if (bpm === "150&ndash;160"){
+    } else if (bpm === "150 - 160"){
         form_state['bpm'] = {
             from: 150,
             to: 160
         }
-    } else if (bpm === "160&ndash;170"){
+    } else if (bpm === "160 - 170"){
         form_state['bpm'] = {
             from: 160,
             to: 170
         }
-    } else if (bpm === "&gt;180"){
+    } else if (bpm === ">180"){
         form_state['bpm'] = {
             from: 180,
         }
     }
-    console.log(form_state);
+    return form_state;
+}
+
+function set_genre_from_form(genre, form_state){
+    if (genre == 'NA'){
+        return form_state;
+    }
+    form_state['genres'] = genre;
+    return form_state;
+}
+
+//Get state info of form
+function GetStateOfForm(form){
+    var form_state = {};
+    var bpm = $('#BPM :selected').text();
+    form_state = set_BPM_from_form(bpm, form_state);
+    form_state = set_genre_from_form($('#GENRE :selected').text(), form_state);
     return form_state;
 }
 
@@ -99,45 +109,5 @@ $(document).ready(function() {
             AddTracksToTable(tracks, $('#resultsTable > tbody'));
         });
     });
-    // BPM
-    // Find all tracks with a bpm of 120.
-    // Log them to the console, then add them to a list
-    //
-    SC.get('/tracks', { 
-        bpm: { 
-            from: 120 
-        } 
-    }, function(tracks) {
-        //console.log(tracks);
-        //AddTracksToTable(tracks, $('#resultsTable > tbody'));
-    });
 
-    // Duration
-    // Find all tacks with a duration of 30 - 40 minutes
-    // Then Add them to a list
-    //
-    var thirty_minutes_in_milis = 1800000;
-    var fourty_minutes_in_milis = 2400000;
-    SC.get('/tracks', { 
-        duration: { 
-            from: thirty_minutes_in_milis, 
-            to: fourty_minutes_in_milis 
-        },
-        bpm: { 
-            from: 120 
-        }
-    }, function(tracks) {
-        //console.log(tracks);
-        //AddTracksToTable(tracks, $('#resultsTable > tbody'));
-    });
-
-    // Genre
-    // Find all tracks with a genre of "dubstep"
-    //
-    SC.get('/tracks', { 
-        genre: "dubstep" 
-    }, function(tracks) {
-        //console.log(tracks);
-        //AddTracksToTracklist(tracks, $('#GenreList'));
-    });
 });

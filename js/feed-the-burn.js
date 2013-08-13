@@ -5,10 +5,15 @@
 // 
 //
 
+function millisecondsToTime(milli){
+      var seconds = Math.floor((milli / 1000) % 60);
+      var minutes = Math.floor((milli / (60 * 1000)) % 60);
+      return minutes + "m : " + seconds + " s";
+}
+
 //Add Tracks to Tracklist:
 function AddTracksToTracklist(tracks, list){
     $(tracks).each(function(track) {
-        //console.log(this);
         list.append("<li> <a href='" + this.permalink_url + "''>"+ this.user.username + " - " + this.title + "</a></li>");
     });
 }
@@ -20,7 +25,7 @@ function CreateTrackRow(track){
         "</td><td><a target='_blank' href='" + track.permalink_url + 
         "''>" + track.title + "</a></td><td>" +
         track.bpm + "</td><td>" + track.genre +
-        "</td><td>" + track.duration + "</td><td>"
+        "</td><td>" + millisecondsToTime(track.duration) + "</td><td>"
     )
     if (track.downloadable === true) {
         row_string += "Yes";
@@ -32,7 +37,6 @@ function CreateTrackRow(track){
 //Add Tracks to Table:
 function AddTracksToTable(tracks, table){
     $(tracks).each(function(track) {
-        //console.log(this);
         table.append(CreateTrackRow(this));
     });
 }
@@ -73,6 +77,49 @@ function set_BPM_from_form(bpm, form_state){
             from: 180,
         }
     }
+    
+    return form_state;
+}
+
+function set_duration_from_form(duration, form_state){
+    if (duration === "<5"){
+        form_state['duration'] = {
+            from: 0,
+            to: 300000
+        };
+    } else if (duration === "5 - 10"){
+        form_state['duration'] = {
+            from: 300000,
+            to: 600000
+        };
+    } else if (duration === "10 - 15"){
+        form_state['duration'] = {
+            from: 600000,
+            to: 900000
+        }
+    } else if (duration === "15 - 20"){
+        form_state['duration'] = {
+            from: 900000,
+            to: 1200000
+        }
+    } else if (duration === "20 - 30"){
+        form_state['duration'] = {
+            from: 1200000,
+            to: 1500000
+        }
+    } else if (duration === ">30"){
+        form_state['duration'] = {
+            from: 1500000,
+            to: 1800000
+        }
+    }
+    else {
+        form_state['duration'] = {
+            from: 300000,
+            to: 400000
+        }
+    }
+    
     return form_state;
 }
 
@@ -88,8 +135,10 @@ function set_genre_from_form(genre, form_state){
 function GetStateOfForm(form){
     var form_state = {};
     var bpm = $('#BPM :selected').text();
+    //Genre was removed due to soundcloud API problems
+    //form_state = set_genre_from_form($('#GENRE :selected').text(), form_state);
+    form_state = set_duration_from_form($('#DURATION :selected').text(), form_state);
     form_state = set_BPM_from_form(bpm, form_state);
-    form_state = set_genre_from_form($('#GENRE :selected').text(), form_state);
     return form_state;
 }
 
@@ -104,7 +153,6 @@ $(document).ready(function() {
     $('#submit').click(function() {
         var query = GetStateOfForm($('filterForm'));
         SC.get('/tracks', query , function(tracks) {
-            console.log(tracks);
             $("#resultsTable > tbody").children().remove();
             AddTracksToTable(tracks, $('#resultsTable > tbody'));
         });
